@@ -1,5 +1,5 @@
 ---
-name: lovstudio:html2pptx
+name: lovstudio-html2pptx
 description: >
   Convert HTML into a high-fidelity PPTX deck using a real browser engine
   (Playwright/Chromium). Each `.slide` element in the HTML becomes one
