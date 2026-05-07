@@ -1,6 +1,6 @@
 # lovstudio:html2pptx
 
-![Version](https://img.shields.io/badge/version-0.1.0-CC785C)
+![Version](https://img.shields.io/badge/version-0.1.1-CC785C)
 
 Convert HTML to a high-fidelity PPTX deck via Playwright/Chromium.
 Each `.slide` element becomes one pptx page (rendered as a 1920×1080 retina
@@ -13,7 +13,7 @@ Part of [lovstudio skills](https://github.com/lovstudio/skills) — by [lovstudi
 ## Install
 
 ```bash
-git clone https://github.com/lovstudio/html2pptx-skill ~/.claude/skills/lovstudio-html2pptx
+npx lovstudio skills add html2pptx -g -y
 pip install playwright python-pptx --break-system-packages
 python3 -m playwright install chromium
 ```
@@ -25,7 +25,7 @@ Requires Python 3.9+.
 ### Direct: HTML → PPTX
 
 ```bash
-python3 ~/.claude/skills/lovstudio-html2pptx/scripts/html2pptx.py \
+python3 scripts/html2pptx.py \
   --input deck.html \
   --output deck.pptx
 ```
@@ -33,7 +33,7 @@ python3 ~/.claude/skills/lovstudio-html2pptx/scripts/html2pptx.py \
 ### Live editor
 
 ```bash
-python3 ~/.claude/skills/lovstudio-html2pptx/scripts/edit_html.py \
+python3 scripts/edit_html.py \
   --input deck.html
 ```
 

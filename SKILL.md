@@ -17,7 +17,7 @@ compatibility: >
   `python-pptx`. Cross-platform: macOS, Windows, Linux.
 metadata:
   author: lovstudio
-  version: "0.1.0"
+  version: "0.1.1"
   tags: html pptx slides presentation playwright deck
 ---
 
@@ -76,7 +76,7 @@ provided a path AND said "convert it" → mode = direct).
 **Direct mode:**
 
 ```bash
-python3 ~/.claude/skills/lovstudio-html2pptx/scripts/html2pptx.py \
+python3 scripts/html2pptx.py \
   --input path/to/deck.html \
   --output ./output/deck.pptx \
   --size 1920x1080 \
@@ -86,7 +86,7 @@ python3 ~/.claude/skills/lovstudio-html2pptx/scripts/html2pptx.py \
 **Live editor mode:**
 
 ```bash
-python3 ~/.claude/skills/lovstudio-html2pptx/scripts/edit_html.py \
+python3 scripts/edit_html.py \
   --input path/to/deck.html
 ```
 
