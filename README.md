@@ -1,4 +1,4 @@
-# lovstudio:html2pptx
+# lovstudio-html2pptx
 
 ![Version](https://img.shields.io/badge/version-0.1.1-CC785C)
 
