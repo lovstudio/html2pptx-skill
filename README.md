@@ -8,12 +8,12 @@ image), so any CSS layout — flex, grid, webfonts, gradients, SVG — survives
 intact. Includes a local live editor for browser-based editing with one-click
 PPTX export.
 
-Part of [lovstudio skills](https://github.com/lovstudio/skills) — by [lovstudio.ai](https://lovstudio.ai)
+Part of [skills](https://example.com/skills/skills) — by [example.com](https://example.com)
 
 ## Install
 
 ```bash
-npx lovstudio skills add html2pptx -g -y
+npx skills add html2pptx -g -y
 pip install playwright python-pptx --break-system-packages
 python3 -m playwright install chromium
 ```
@@ -91,8 +91,8 @@ Override with `--split single` or `--selector ".your-class"`.
 
 A ready-to-copy reference deck lives at
 [`references/example.html`](references/example.html). Open it in a browser to
-see the recommended `.slide` pattern and the Lovstudio Warm Academic palette
-(`#181818`, `#F9F9F7`, `#CC785C`).
+see the recommended `.slide` pattern and the Skill Publisher Configurable Academic palette
+(`#181818`, `#F9F9F7`, `#4F46E5`).
 
 ## License
 

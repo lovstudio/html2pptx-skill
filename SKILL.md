@@ -16,7 +16,7 @@ compatibility: >
   Requires Python 3.9+, `playwright` (with chromium installed) and
   `python-pptx`. Cross-platform: macOS, Windows, Linux.
 metadata:
-  author: lovstudio
+  author: contributors
   version: "0.1.1"
   tags: html pptx slides presentation playwright deck
 ---
@@ -98,7 +98,7 @@ left, live preview on the right) and an `Export PPTX` button. If
 
 Per the user's global convention, write deliverables to
 `./output/articles/` or `./output/data/`. PPTX files default to
-`./output/手工川-{topic}-{YYYY-MM-DD}-v0.1.pptx`.
+`./output/品牌方-{topic}-{YYYY-MM-DD}-v0.1.pptx`.
 
 ## Slide Splitting Rules
 
@@ -169,3 +169,11 @@ python3 -m playwright install chromium
 - **Chinese characters render as boxes** — install a CJK system font or
   embed one via `@font-face`. PingFang SC / Noto Sans CJK work well.
 - **Output pptx looks blurry on a 4K monitor** — bump `--scale 3`.
+
+## Runtime context (shared)
+
+运行前读取本 Skill 包的 `skill.yaml`，由宿主提供 `skill-runtime/v1` 上下文。字段解析顺序为：当前请求、项目上下文、个人 Preferences、品牌 Profile、通用默认值。
+
+- 只使用 Manifest 声明的字段；Profile 保存公开品牌事实，Preferences 保存个人工作偏好。
+- `required: true` 字段缺失时，按 Manifest 的问题配置向用户提出一个聚焦问题；用户明确同意后再保存回答。
+- 报错提供可复制的 `context_id`、字段路径与来源，诊断内容避开秘密、完整私人路径和原始配置。
