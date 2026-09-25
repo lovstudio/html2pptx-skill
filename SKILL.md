@@ -15,13 +15,15 @@ license: MIT
 compatibility: >
   Requires Python 3.9+, `playwright` (with chromium installed) and
   `python-pptx`. Cross-platform: macOS, Windows, Linux.
+depends_on:
+  - lov-branding-consistency
 metadata:
   author: contributors
-  version: "0.1.1"
+  version: "0.1.2"
   tags: html pptx slides presentation playwright deck
 ---
 
-# html2pptx — HTML → PPTX with a real browser
+# 网页转幻灯 · HTML to Slides
 
 Render any HTML file into a polished `.pptx` deck. One `.slide` element →
 one pptx page. Each page is screenshotted at 1920×1080 @ 2× by Chromium
